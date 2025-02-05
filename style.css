@@ -1,0 +1,282 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.fixed-top {
+    background-color: #051418;
+}
+
+#demotext {
+    color: #3bbd62;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+.nav-link {
+    color: #FFF;
+}
+
+.nav-link:hover {
+    color: #49FF18;
+}
+
+.light {
+    -webkit-box-shadow: 2px 2px 1px #842626;
+    -moz-box-shadow: 2px 2px 1px #a03e3e;
+    box-shadow: 2px 2px 17px hsl(0, 17%, 70%);
+    border-radius: 50%;
+    border: 3px solid #8fefee;
+}
+
+.dropdown-item:hover {
+    background-color: #49FF18;
+}
+
+.carousel-inner {
+    margin-top: 34px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.icon>.icon-2 img {
+    width: 55%;
+    height: auto;
+}
+
+.icon>.icon-1 img {
+    max-width: 150vh;
+    min-height: 240px;
+    margin-top: 30px;
+
+}
+
+.icon-3 img {
+    width: 55%;
+    height: auto;
+}
+
+.icon>.icon-2 img {
+    transform: rotate(30deg);
+}
+
+.icon>.icon-3 img {
+    transform: rotate(-30deg);
+}
+
+
+.text-danger,
+.text-info {
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #e2eb6b,
+        0 0 20px rgb(218, 229, 93),
+        0 0 30px rgb(214, 223, 90),
+        0 0 40px rgb(221, 205, 63),
+        0 0 55px rgb(199, 219, 52),
+        0 0 70px rgb(232, 230, 67);
+}
+
+.navbar .input-group {
+    width: 40% !important;
+}
+
+/* TOP MUSIC TODAY */
+.BG-1 {
+    background-color: #273133;
+    color: red;
+}
+
+.BG-2 {
+    min-height: 80vh;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+h4 {
+    font-weight: bold;
+    color: white;
+}
+
+h5 {
+
+    color: red;
+}
+
+.img-2 {
+    width: 300px;
+    height: 200px;
+}
+
+button {
+    width: 150px;
+    height: 40%;
+}
+
+.artist-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mx-3:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+
+
+}
+
+
+.artist-images {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* hot */
+.category-box-1 {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-box-1 img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    max-height: 80%;
+    border-radius: 5px;
+}
+
+.category-box-1 span {
+    z-index: 1;
+}
+
+
+/* hot song */
+.song-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* រក្សាគម្លាត */
+    padding: 10px 0;
+}
+
+.song-item img {
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+audio {
+    width: 150px;
+    height: 30px;
+}
+
+/* footer */
+.b-top {
+    border-bottom: 2px solid #eeefee;
+}
+
+small {
+    font-weight: bold;
+}
+
+
+.BGH {
+    text-decoration: none;
+    color: #0aaccd;
+    position: absolute;
+    font-size: large;
+    text-align: center;
+
+}
+
+.BGH:hover {
+    color: rgb(192, 225, 115);
+    transform: scale(1.6);
+    transition: transform 0.5s;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    width: 4rem;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.carousel-control-next {
+    margin-top: 90px;
+}
+
+.carousel-control-prev {
+    margin-top: 80px;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

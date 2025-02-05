@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderna Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  fade-in ">
+        <div class="container-fluid fixed-top">
+            <a class="navbar-brand fw-bold" href="/index.html">
+                <img src="/asset/icon/micro-removebg-preview.png" alt="" width="40px" height="auto" class="light">
+                <span id="demotext">Artist</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-black"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <div class="input-group w-25 ms-lg-auto">
+                    <input type="text" class="form-control shadow-none  border-white rounded-start-5"
+                        placeholder="Search">
+                    <span class="input-group-text bg-dark rounded-end-5"><i class="bi bi-search text-white"></i></span>
+                </div>
+                <ul class="navbar-nav ms-lg-auto fw-bold  ">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="ms-1 fw-bold">UPDATE</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start bg-dark " aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item text-white" href="#section1">
+                                    <i class="fas fa-guitar"> CONCERT</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-white" href="/components/Sell.ticket.html">
+                                    <i class="fas fa-ticket-alt"> SELL TICKET</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-white" href="#section2">
+                                    <i class=" fas fa-music"> HOT SONG</i>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-dividerc text-white ">
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-white" href="#">
+                                    <i class="fas fa-ghost"> INFO</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./components/Album.html">ALBUM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./components/Ranking.html">RANKING</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./components/Cotecory.html">COTECORY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./components/ContactUs.html">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger " href="./components/Login.html"
+                            class="text-decoration-none ms-5">LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/asset/icon/3 (1).jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="asset\icon\3 (1).png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/icon/3 (2).png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="container my-5">
+        <!-- Title and Controls -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mb-0">Hot Artists</h2>
+            <div class="control-buttons">
+                <button class="btn btn-outline-dark btn-sm  w-25" data-bs-target="#hotArtistsCarousel"
+                    data-bs-slide="prev">&lt;</button>
+                <button class="btn btn-outline-dark btn-sm  w-25" data-bs-target="#hotArtistsCarousel"
+                    data-bs-slide="next">&gt;</button>
+                <button class="btn btn-dark btn-sm  "><a href="/components/Hot artist.html"
+                        class="text-decoration-none text-white">See All</a></button>
+            </div>
+        </div>
+        <link rel="stylesheet" href="/components/Hot artist.html">
+        <!-- Carousel -->
+        <div id="hotArtistsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center mx-3 py-4">
+                            <img src="/asset/Images/Morgan vallen.png" class="rounded-circle artist-image"
+                                alt="Morgan Wallen">
+                            <p class="mt-2 fw-bold">Morgan Wallen</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="/asset/Images/Tyalor swift.png" class="rounded-circle artist-image"
+                                alt="Taylor Swift">
+                            <p class="mt-2  fw-bold">Taylor Swift</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="/asset/Images/Bruno mars.png" class="rounded-circle artist-image"
+                                alt="Bruno Mars">
+                            <p class="mt-2  fw-bold">Bruno Mars</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="/asset/Images/Kendrick lamar.png" class="rounded-circle artist-image"
+                                alt="Bruno Mars">
+                            <p class="mt-2  fw-bold">Kendrick Lamar</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="/asset/Images/post malone.png" class="rounded-circle artist-image"
+                                alt="Bruno Mars">
+                            <p class="mt-2  fw-bold">Post Malone</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="/asset/Images/Jelly role.png" class="rounded-circle artist-image"
+                                alt="Bruno Mars">
+                            <p class="mt-2  fw-bold">Jelly Role</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center mx-3 py-4">
+                            <img src="/asset/Images/The weekend.png" class="rounded-circle artist-image"
+                                alt="Kendrick Lamar">
+                            <p class="mt-2  fw-bold">The Weeknd</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="/asset/Images/Eninem.png" class="rounded-circle artist-image" alt="Post Malone">
+                            <p class="mt-2  fw-bold">Eninem</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="asset\icon\Drake.png" class="rounded-circle artist-image" alt="Jelly Roll">
+                            <p class="mt-2  fw-bold">Drake</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="asset\icon/Zach brayan.png" class="rounded-circle artist-image" alt="Jelly Roll">
+                            <p class="mt-2  fw-bold">Zach Brayan</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="asset\icon/Lady gaga.png" class="rounded-circle artist-image" alt="Jelly Roll">
+                            <p class="mt-2  fw-bold">Lady GaGa</p>
+                        </div>
+                        <div class="text-center mx-3 py-4">
+                            <img src="asset\icon/SZA.png" class="rounded-circle artist-image" alt="Jelly Roll">
+                            <p class="mt-2  fw-bold">SZA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- concert -->
+    <div class="container my-5" id="section1">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mb-0">Concert Festival</h2>
+            <div class="control-buttons">
+                <button class="btn btn-dark btn-sm  ">See All</button>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div id="hotArtistsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center mx-3 py-3">
+                            <img src="/asset/Images/concert-1.jpg" class="  artist-images" alt="Morgan Wallen">
+                        </div>
+                        <div class="text-center mx-3 py-3">
+                            <img src="/asset/Images/concert-2.jpg" class=" artist-images" alt="Taylor Swift">
+                        </div>
+                        <div class="text-center mx-3 py-3">
+                            <img src="/asset/Images/concert-3.jpg" class="artist-images" alt="Bruno Mars">
+                        </div>
+                        <div class="text-center mx-3 py-3">
+                            <img src="/asset/Images/concert-4.jpg" class=" artist-images" alt="Bruno Mars">
+                        </div>
+                        <div class="text-center mx-3 py-3">
+                            <img src="/asset/Images/concert-5.jpg" class=" artist-images" alt="Bruno Mars">
+                        </div>
+                        <div class="text-center mx-3 py-3">
+                            <img src="/asset/Images/concert-6.jpg" class="artist-images" alt="Bruno Mars">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-4" id="section2">
+        <h3 class="fw-bold">Hot Songs</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="song-item">
+                    <img src="/asset/Images/Die with a smile.jpg" alt="Song 1">
+                    <div class="song-info">
+                        <p class="mb-0 fw-bold">Die With A Smile</p>
+                        <small>Lady Gaga & Bruno Mars</small>
+                        <audio controls>
+                            <source
+                                src="/asset/Audio/HotSong/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="song-item">
+                    <img src="/asset/Images/Love sombody.jpg" alt="Song 2">
+                    <div class="song-info">
+                        <p class="mb-0 fw-bold">Love Somebody</p>
+                        <small>Morgan Wallen</small>
+                        <audio controls>
+                            <source src="/asset/Audio/HotSong/Lukas Graham - Love Someone (Lyrics).mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="song-item">
+                    <img src="/asset/Images/Lose control.jpg" alt="Song 3">
+                    <div class="song-info">
+                        <p class="mb-0 fw-bold">Lose Control</p>
+                        <small>Teddy Swims</small>
+                        <audio controls>
+                            <source src="/asset/Audio/HotSong/Teddy Swims - Lose Control (The Village Sessions).mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="song-item">
+                    <img src="/asset/Images/smiles.jpg" alt="Song 4">
+                    <div class="song-info">
+                        <p class="mb-0 fw-bold">Smile</p>
+                        <small>Morgan Wallen</small>
+                        <audio controls>
+                            <source src="/asset/Audio/HotSong/Smile.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="song-item">
+                    <img src="/asset/Images/ATP.jpg" alt="Song 5">
+                    <div class="song-info">
+                        <p class="mb-0 fw-bold">ATP</p>
+                        <small>ROSÉ & Bruno Mars</small>
+                        <audio controls>
+                            <source src="/asset/Audio/HotSong/ROSE & Bruno Mars - APT. (Official Music Video).mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="song-item">
+                    <img src="/asset/Images/luther.jpg" alt="Song 6">
+                    <div class="song-info">
+                        <p class="mb-0 fw-bold">luther</p>
+                        <small>Kendrick Lamar & SZA</small>
+                        <audio controls>
+                            <source src="/asset/Audio/HotSong/luther.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 py-4">
+        <h3>TOP MUSIC TODAY</h3>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #c00650;">
+                    <span>G-devith</span>
+                    <p></p>
+                    <img src="/asset/Images//GD.png" alt="" width="120">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #4f6158;">
+                    <span>Vanda</span>
+                    <img src="/asset/Images//VD.png" alt="" width="120">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #a484c4;">
+                    <span>Tep piseth</span>
+                    <img src="./asset/Images/Tep piseth.png" alt="" width="120">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #578500;">
+                    <span>King chi</span>
+                    <img src="/asset/Images/king chi.png" alt="" width="120">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #63a9b1;">
+                    <span>Kwan</span>
+                    <img src="/asset/Images/Kwan.png" alt="" width="120">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #185a00;">
+                    <span>YCN Rakhie</span>
+                    <img src="./asset/Images/YCN.png" alt="" width="120">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #cc6600;">
+                    <span>NPN</span>
+                    <img src="/asset/Images/Cotecory/7.png" alt="Music">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #5186d5;">
+                    <span>Mezzy 24k</span>
+                    <img src="/asset/Images/Mezzy.png" alt="" width="120">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #178e4e;">
+                    <span>Yuhai</span>
+                    <img src="/asset/Images/Yuhai.png" alt="" width="120">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-box-1" style="background-color: #814281;">
+                    <span>Allergy</span>
+                    <img src="./asset/Images/Allergy.png" alt="" width="120">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="w-75 pb-2 b-top">About Artist</h4>
+                    <p>Welcome to Artist, where we celebrate the best in music and artistry. Stay updated with the
+                        latest concerts, albums, and top tracks from your favorite artists.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="w-75 pb-2 b-top">Sponsor Music</h4>
+                    <ul class="list-unstyled d-flex">
+                        <li><a href="#"><img src="/asset/icon/Spo-1.png" alt="Sponsor 1" width="40"></a></li>
+                        <li><a href="#"><img src="/asset/icon/Spo-2.png" alt="Sponsor 2" width="40"></a></li>
+                        <li><a href="#"><img src="/asset/icon/Spo-3.png" alt="Sponsor 3" width="40"></a></li>
+                        <li><a href="#"><img src="/asset/icon/Spo-1.png" alt="Sponsor 4" width="40"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="w-75 pb-2 b-top">Contact Us</h4>
+                    <p><i class="fas fa-envelope contact-icon"></i><strong> Email:</strong> support@musicwebsite.com</p>
+                    <p><i class="fas fa-phone contact-icon"></i><strong> Phone:</strong> +885-088-8628-426</p>
+                    <p><i class="fas fa-map-marker-alt contact-icon"></i><strong> Address:</strong><br> 007 Music Lane, KPC, SST, Cambodia</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 b-top">
+                    <h4 class="w-75 pb-2 b-top">Our Location</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153167!3d-37.81627977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d1b6c5b0b1a!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1611816751234!5m2!1sen!2sau"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>© copyright by Seng koemnan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
